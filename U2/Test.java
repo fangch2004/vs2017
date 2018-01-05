@@ -13,5 +13,5 @@ public class Test {
 		System.out.println(st1);
 		
 	}
-
+find -name "*.java" > sources.txt
 }

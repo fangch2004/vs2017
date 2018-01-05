@@ -8,12 +8,11 @@ public class Klasse {
 	{
 	Beobachter o= new Beobachter("Datei.txt");
 	o.start();
-		/*
+		
 	Scanner sc= new Scanner(System.in);
 	String str=sc.next();
-    if (str=="stop")*/
-	
-		
+    if(str.equals("stop"))
+	/*	offizielle loesung
    BufferedReader rr=new BufferedReader(new InputStreamReader(System.in)); 
    String komm; 
    try { 
@@ -27,7 +26,9 @@ public class Klasse {
 		{
 		    e.printStackTrace();  
 		} 
-   o.interrupt();
+		)*/
+	{  o.interrupt();
   
 	}
+}
 }
