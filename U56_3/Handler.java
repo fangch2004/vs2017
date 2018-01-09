@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.concurrent.ArrayBlockingQueue;
 
 public class Handler {
-
+// the name of this class should be TransactionHandler but somehow that can't go thru compiling, so I changed it to Handler and it works
 	public static void main(String[] args) {
 		ArrayBlockingQueue<Transaction> transactionQueue=new ArrayBlockingQueue<Transaction>(100);		
 		Bank bank=new Bank(transactionQueue);
