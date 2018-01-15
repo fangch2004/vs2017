@@ -55,7 +55,7 @@ public class Raetzel extends Application implements EventHandler<KeyEvent>{
 		GridPane.setConstraints(button, 0, 1);
 		pane.getChildren().addAll(label,button);
         Scene scene= new Scene(pane,300,200);
-        stage.setTitle("Wörter raten");        
+        stage.setTitle("Woerter raten");        
         stage.setScene(scene);        
         stage.show();    
 	}

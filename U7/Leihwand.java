@@ -2,6 +2,12 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Line;
+import javafx.application.Application;
+import javafx.event.EventHandler;
+import javafx.scene.Scene;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.HBox;
+import javafx.stage.Stage;
 
 public class Leinwand extends Canvas {
 
@@ -24,16 +30,7 @@ linie.getEndX(),linie.getEndY());
 	
 }
 
-
-import javafx.application.Application;
-import javafx.event.EventHandler;
-import javafx.scene.Scene;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.HBox;
-import javafx.scene.shape.Line;
-import javafx.stage.Stage;
-
-public class LinienEditor extends Application implements stroke{
+class LinienEditor extends Application implements stroke{
 
 	public static void main(String[] args) {
 		launch(args);
