@@ -9,28 +9,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
-public class Leinwand extends Canvas {
-
-	Line linie;
-
-	public Leinwand(Line linie) {
-		super();
-		this.linie = linie;
-		setWidth(400);
-		setHeight(300);
-	}
-	public void paint(){
-		GraphicsContext	gc = getGraphicsContext2D();
-		gc.setStroke(Color.FIREBRICK);
-		gc.setLineWidth(10);
-		
-		gc.strokeLine(linie.getStartX(),linie.getStartY(),
-linie.getEndX(),linie.getEndY());
-	}
-	
-}
-
-class LinienEditor extends Application implements stroke{
+public class LinienEditor extends Application implements EventHandler <MouseEvent> {
 
 	public static void main(String[] args) {
 		launch(args);
@@ -71,4 +50,25 @@ class LinienEditor extends Application implements stroke{
 				leinwand.paint();
 			}
 	}
+}
+
+ class Leinwand extends Canvas {
+
+	Line linie;
+
+	public Leinwand(Line linie) {
+		super();
+		this.linie = linie;
+		setWidth(400);
+		setHeight(300);
+	}
+	public void paint(){
+		GraphicsContext	gc = getGraphicsContext2D();
+		gc.setStroke(Color.FIREBRICK);
+		gc.setLineWidth(10);
+		
+		gc.strokeLine(linie.getStartX(),linie.getStartY(),
+linie.getEndX(),linie.getEndY());
+	}
+	
 }
